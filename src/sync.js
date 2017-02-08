@@ -59,7 +59,7 @@ export default function syncHistoryWithStore(history, store, {
       currentLocation = locationInStore
       history.transitionTo({
         ...locationInStore,
-        action: 'PUSH'
+        action: 'REPLACE'
       })
       isTimeTraveling = false
     }
